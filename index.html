@@ -1,14 +1,150 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Marcio Klein</title>
+
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imagens/favicon.png" type="image/png">
+
+    <style>
+      header {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+      }
+
+      .logo {
+        width: 60px;
+        height: 60px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 12px;
+      }
+
+      .logo:hover {
+        transform: scale(1.5);
+        box-shadow: 0 4px 12px rgba(88, 104, 117, 0.4);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #B1BA8E;
+        color: #7A6448;
+        line-height: 1.7;
+        min-height: 100vh;
+      }
+
+      main {
+        background-color: #F9F4E3;
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px 50px;
+        border-radius: 0;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.4em;
+        color: #7A6448;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+
+      h2 {
+        margin-top: 40px;
+        color: #B1BA8E;
+        border-left: 5px solid #D4DDB1;
+        padding-left: 10px;
+        font-size: 1.6em;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
+      }
+
+      h2:hover {
+        transform: scale(1.05);
+        text-shadow: 0 0 10px #D4DDB1;
+      }
+
+      h3 {
+        margin-top: 25px;
+        color: #7A6448;
+        font-size: 1.15em;
+      }
+
+      p {
+        margin-top: 15px;
+        color: #7A6448;
+        font-size: 1.05em;
+      }
+
+      b {
+        color: #7A6448;
+      }
+
+      .btn-proxima {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 28px;
+        background-color: #CDB28A;
+        color: #F9F4E3;
+        border: none;
+        border-radius: 25px;
+        font-size: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: 0.3s ease;
+      }
+
+      .btn-proxima:hover {
+        background-color: #7A6448;
+        color: #F9F4E3;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      main p::selection,
+      h1::selection,
+      h2::selection,
+      h3::selection {
+        background: #CDB28A;
+        color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          padding: 30px 25px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1.4em;
+        }
+      }
+    </style>
   </head>
+
   <body>
+    <header>
+      <img src="imagens/favicon.png" alt="Logo do site" class="logo">
+    </header>
+
     <main>
       <h1><b>BEM-VINDOS!!!</b></h1>
 
       <p>
-        Acreditamos que <b>você</b> veio até aqui em busca de uma melhora, seja para sua saúde ou ampliar seu conhecimento. Te garantimos que irá extrair algo de valor
-        neste espaço.
+        Acreditamos que <b>você</b> veio até aqui em busca de uma melhora, seja para sua saúde ou ampliar seu conhecimento. Te garantimos que irá extrair algo de valor neste espaço.
       </p>
 
       <h2>POR QUE DEVO CONTINUAR NO SITE?</h2>
@@ -16,28 +152,22 @@
       <p>A ideia aqui é inspirar você a mudar a sua qualidade de vida ou aprender mais sobre o estilo de vida ligado à academia, musculação e corrida.</p>
 
       <p>
-        Não estamos aqui para te vender nada, mas sim ajudar você a conquistar uma vida mais saudável, com maior desempenho nas suas atividades físicas e uma mente mais
-        equilibrada.
+        Não estamos aqui para te vender nada, mas sim ajudar você a conquistar uma vida mais saudável, com maior desempenho nas suas atividades físicas e uma mente mais equilibrada.
       </p>
-      <h3>(Aqui, para quem for desenvolver o site, inserir um botão ou link que leve à próxima página.)</h3>
 
       <h2>DISCIPLINA</h2>
 
       <p>
-        Disciplina é um assunto polêmico, mas que, quando bem explicado, se torna simples de entender. Podemos definir a disciplina como uma conduta a ser seguida, mas
-        isso não significa que não possa haver falhas. O segredo está em criar metas alcançáveis. Não tem problema nenhum começar pelo fácil. A importância está em
+        Disciplina é um assunto polêmico, mas que, quando bem explicado, se torna simples de entender. Podemos definir a disciplina como uma conduta a ser seguida, mas isso não significa que não possa haver falhas. O segredo está em criar metas alcançáveis. Não tem problema nenhum começar pelo fácil. A importância está em
         <b>dar o primeiro passo.</b> Com o tempo, aquilo que parece difícil passa a se tornar uma parte natural da rotina.
       </p>
 
       <p>
-        Muitas pessoas se frustram porque tentam ser extremamente rigorosas desde o início. Quando falham, acreditam que “isso não é para elas”. Na verdade, o que
-        acontece, é que o excesso de cobrança pode levar ao abandono.
+        Muitas pessoas se frustram porque tentam ser extremamente rigorosas desde o início. Quando falham, acreditam que “isso não é para elas”. Na verdade, o que acontece, é que o excesso de cobrança pode levar ao abandono.
       </p>
 
       <p>
-        <b>Exemplo:</b> Uma pessoa gosta muito de um salgadinho chips de sabor requeijão e come esses salgadinhos todos os dias. Se tirarmos de uma vez este hábito, a
-        pessoas até conseguiria aguentar um certo tempo, mas acabaria tendo uma recaída e comendo o dobro. Agora, se a pessoa fosse orientada á reduzir gradualmente este
-        hábito (regrando os dias que ela pode consumir o salgadinho), sua vontade pode ir diminuindo aos poucos, até que por fim ele perdesse o gosto.
+        <b>Exemplo:</b> Uma pessoa gosta muito de um salgadinho chips de sabor requeijão e come esses salgadinhos todos os dias. Se tirarmos de uma vez este hábito, a pessoa até conseguiria aguentar um certo tempo, mas acabaria tendo uma recaída e comendo o dobro. Agora, se a pessoa fosse orientada a reduzir gradualmente este hábito (regrando os dias que ela pode consumir o salgadinho), sua vontade pode ir diminuindo aos poucos, até que por fim ele perdesse o gosto.
       </p>
 
       <p>Em resumo, a disciplina é um hábito que você cria de pouco em pouco.</p>
@@ -49,13 +179,19 @@
       </p>
 
       <h3>PEÇA AJUDA A UM PROFESSOR DA ACADEMIA 👨‍🏫</h3>
-      As academias costumam ter profissionais capacitados para te ajudar a montar um treino personalizado, de acordo com seus objetivos e limitações.
+      <p>
+        As academias costumam ter profissionais capacitados para te ajudar a montar um treino personalizado, de acordo com seus objetivos e limitações.
+      </p>
 
       <h3>USE APLICATIVOS DE TREINO📱</h3>
-      Atualmente existem diversos apps que oferecem planos prontos para pessoas iniciantes em musculação e corrida, com vídeos explicando cada exercício.
+      <p>
+        Atualmente existem diversos apps que oferecem planos prontos para pessoas iniciantes em musculação e corrida, com vídeos explicando cada exercício.
+      </p>
 
       <h3>PROCURE TREINOS BÁSICOS NA INTERNET🌐</h3>
-      Blogs, vídeos no YouTube e sites especializados podem servir como guia inicial. Só lembre de checar se são fontes confiáveis.
+      <p>
+        Blogs, vídeos no YouTube e sites especializados podem servir como guia inicial. Só lembre de checar se são fontes confiáveis.
+      </p>
 
       <h3>TREINOS COMUNS PARA INICIANTES EM MUSCULAÇÃO:</h3>
 
@@ -73,26 +209,23 @@
 
       <p><b>Whey Protein</b> 🥛 - Fonte rápida de proteína, ajuda na recuperação muscular após os treinos e favorece o ganho de massa magra.</p>
       <p><b>Creatina</b> ⚡ - Aumenta a força, melhora o desempenho em treinos de alta intensidade e contribui para a hipertrofia.</p>
-      <p><b>BCAA (aminoácidos de cadeia ramificada)</b> 💪 - Reduz a fadiga muscular, auxilia na recuperação e evita a perda de massa magra.</p>
+      <p><b>BCAA</b> 💪 - Reduz a fadiga muscular, auxilia na recuperação e evita a perda de massa magra.</p>
       <p><b>Glutamina</b> 🛡️ - Importante para a imunidade, também ajuda na recuperação muscular e intestinal.</p>
       <p><b>Pré-treinos</b> 🔥 - Aumentam energia, foco e disposição durante o treino, normalmente contendo cafeína e outros estimulantes.</p>
-      <p><b>Albumina</b> 🍳 - Proteína de absorção lenta, ideal para horários como antes de dormir, ajudando a manter nutrição muscular por mais tempo.</p>
+      <p><b>Albumina</b> 🍳 - Proteína de absorção lenta, ideal para antes de dormir, ajudando a manter nutrição muscular por mais tempo.</p>
       <p>
-        <b>Hipercalórico</b> 🍚 - Mistura de carboidratos e proteínas, indicado para quem precisa ganhar peso ou tem dificuldade em atingir a quantidade necessária de
-        calorias.
+        <b>Hipercalórico</b> 🍚 - Mistura de carboidratos e proteínas, indicado para quem precisa ganhar peso ou tem dificuldade em atingir a quantidade necessária de calorias.
       </p>
 
       <h3>(LEMBRE-SE: cada corpo reage de uma forma. O ideal é buscar orientação de um nutricionista para saber qual suplemento realmente faz sentido para você.)</h3>
 
       <h2>CONCLUSÃO</h2>
       <p>
-        Disciplina e resiliência são como pilares para uma vida saudável e produtiva. A disciplina te ensina <b>como começar e manter uma rotina</b>; a resiliência te
-        ensina a <b>não desistir quando os desafios aparecerem</b>.
+        Disciplina e resiliência são como pilares para uma vida saudável e produtiva. A disciplina te ensina <b>como começar e manter uma rotina</b>; a resiliência te ensina a <b>não desistir quando os desafios aparecerem</b>.
       </p>
 
       <p>
-        Nos próximos conteúdos do site, você encontrará dicas, práticas e reflexões que vão te ajudar a aplicar esses conceitos no dia a dia, seja na musculação, na
-        corrida, ou em qualquer outra área da vida.
+        Nos próximos conteúdos do site, você encontrará dicas, práticas e reflexões que vão te ajudar a aplicar esses conceitos no dia a dia, seja na musculação, na corrida, ou em qualquer outra área da vida.
       </p>
       <p><b>O PRIMEIRO PASSO JÁ FOI DADO: VOCÊ ESTÁ AQUI! AGORA, SIGA EM FRENTE!!</b></p>
     </main>
